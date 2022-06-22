@@ -1,2 +1,0 @@
-*{box-sizing:border-box}body{margin:0}.layout{display:grid;grid-template-columns:30px 1fr 30px}.app-header{grid-column:1/-1}.home-page{align-items:center;display:flex;flex-direction:column;grid-column:2/3}.home-page .landing-list{grid-gap:20px;display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));width:100%}.home-page .landing-list .landing-preview{background-color:#008b8b;display:flex;flex-direction:column}
-/*# sourceMappingURL=main.6dbe28f6.css.map*/
