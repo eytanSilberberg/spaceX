@@ -1,7 +1,7 @@
 // import { configureStore } from '@reduxjs/toolkit';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
-import { anyReducer } from './any/any.reducer'
+import { landingReducer } from './landing/landing.reducer'
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 // export const store = configureStore({
@@ -11,7 +11,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 // });
 
 const rootReducer = combineReducers({
-  anyModule: anyReducer
+  landingModule: landingReducer
 })
 
 export const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))

@@ -11,14 +11,14 @@ function query(entityType) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(entities)
-        }, 500)
+        }, 1000)
     })
 }
 
 async function post(entityType, newEntity) {
-    const users = await query(entityType)
-    users.push(newEntity)
-    _save(entityType, users)
+    const Landings = await query(entityType)
+    Landings.push(newEntity)
+    _save(entityType, Landings)
     return newEntity
 }
 
